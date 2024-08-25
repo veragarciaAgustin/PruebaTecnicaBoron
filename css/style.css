@@ -454,8 +454,8 @@ header.scrolled {
 }
 
 .twitter-img img {
-  width: 40vw;
-  height: fit-content;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -632,11 +632,24 @@ header.scrolled {
 }
 
 .repository-item .arrow img:hover {
-  width: 6vw;
+  width: 5vw;
   background-color: #ffff;
   border-radius: 50%;
   padding: 10%;
   filter: invert(100%);
+}
+
+.repository-img-hidden {
+  display: none;
+}
+
+.arrow:hover + .repository-img-hidden {
+  display: block;
+}
+
+.repository-img-hidden{
+  width: 8vw;
+  margin-left: 5%;
 }
 
 @media (max-width: 1000px) {
