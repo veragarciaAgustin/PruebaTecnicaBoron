@@ -1,5 +1,3 @@
-@import url("media.css");
-
 /* Formateo */
 * {
   scroll-behavior: smooth;
@@ -71,24 +69,6 @@ header {
   margin-left: 5vw;
 }
 
-/* Estilo del botón que parece texto plano */
-.text-button {
-  background: none;
-  border: none;
-  color: #000;
-  font-size: 2vh;
-  cursor: pointer;
-  padding: 0;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  transition: color 0.3s, text-decoration 0.3s;
-}
-
-.text-button:hover {
-  color: #4cb3d4;
-  text-decoration: none;
-}
-
 /* Hamburger menu */
 .hamburger-menu {
   position: sticky;
@@ -108,26 +88,6 @@ header {
 
 .hamburger img {
   width: 17vh;
-}
-
-/* Media queries - Hamburger menu */
-@media screen and (max-width: 768px) {
-  .logo img {
-    height: 40px;
-  }
-
-  .hamburger {
-    padding: 8px 12px;
-  }
-
-  .hamburger span {
-    width: 18px;
-    height: 2px;
-  }
-
-  .side-menu {
-    width: 100%;
-  }
 }
 
 
@@ -246,20 +206,6 @@ header {
   right: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .side-menu li a {
-     font-size: 4vw;
-  }
-
-  .side-menu .search-icon img {
-    height: 8vw;
-  }
-
-  .newsletter {
-    font-size: 2vw;
-  }
-}
-
 
 /* Estado inicial del navbar */
 .hamburger-menu {
@@ -275,8 +221,6 @@ header.scrolled {
   transition: background-color 0.7s ease;
   
 }
-
-
 
 /* Bienvenida */
 .welcome-section {
@@ -420,22 +364,6 @@ header.scrolled {
   display: block;
 }
 
-/* Media queries - Focus */
-
-@media (max-width: 1300px) {
-
-  .focus-text .title {
-    font-size: 3vw;
-    margin-bottom: 10%;
-    
-  }
-
-  .focus-text .content {
-    font-size: 3vw;
-  }
-}
-
-
 /* Twitter */
 
 .twitter {
@@ -567,17 +495,6 @@ header.scrolled {
   display: block;
 }
 
-/* Media queries - Focus */
-
-@media (max-width: 1300px) {
-
-  .twitter-text .title {
-    font-size: 2vw;
-    margin-bottom: 10%;
-    
-  }
-}
-
 /* Repositorio */
 
 .repository-container {
@@ -652,15 +569,6 @@ header.scrolled {
   margin-left: 5%;
 }
 
-@media (max-width: 1000px) {
-  .repository-container {
-    max-width: 80vw;
-    margin-left: 5vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    overflow: hidden;
-  }
-}
 /* Novedades */
 
 .title-novedades {
@@ -750,6 +658,7 @@ header.scrolled {
   opacity: 1;
 }
 
+/* Colores de tarjetas*/
 .card2 {
   background-color: #77d7db;
 }
@@ -760,20 +669,6 @@ header.scrolled {
 
 .card4 {
   background-color: #feda3c;
-}
-
-@media (max-width: 1200px) {
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-   
-  }
 }
 
 /* Footer */
@@ -905,6 +800,7 @@ footer p {
   font-weight: 800;
 }
 
+/*FOOTER ICONS*/
 .twitter-footer {
   width: 5vw;
   margin-left: 20%;
@@ -916,6 +812,89 @@ footer p {
   margin-right: 10%;
 }
 
+
+/* RESPONSIVE - Media Queries (Se ha utilizado viewport tambien como medida
+al diseno responsive)*/
+
+
+/* Media queries - Hamburger menu */
+@media screen and (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .hamburger {
+    padding: 8px 12px;
+  }
+
+  .hamburger span {
+    width: 18px;
+    height: 2px;
+  }
+
+  .side-menu {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .side-menu li a {
+     font-size: 4vw;
+  }
+
+  .side-menu .search-icon img {
+    height: 8vw;
+  }
+
+  .newsletter {
+    font-size: 2vw;
+  }
+}
+
+
+/*Focus */
+
+@media (max-width: 1300px) {
+
+  .focus-text .title {
+    font-size: 3vw;
+    margin-bottom: 10%;
+    
+  }
+
+  .focus-text .content {
+    font-size: 3vw;
+  }
+}
+
+/* Tarjetas*/
+@media (max-width: 1200px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+   
+  }
+}
+
+/*Repositorio*/
+@media (max-width: 1000px) {
+  .repository-container {
+    max-width: 80vw;
+    margin-left: 5vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow: hidden;
+  }
+}
+
+/*Footer */
 @media (max-width: 1200px) {
   .together{
     display:inline-block;
